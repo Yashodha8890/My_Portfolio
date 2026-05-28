@@ -43,38 +43,38 @@ const languages = [
 
 function Education() {
   return (
-    <section id="education" className="px-10 py-16 bg-gray-50 border-b border-gray-200">
+    <section id="education" className="px-16 py-20 bg-white border-b border-gray-200">
 
-      <h2 className="text-2xl font-bold text-gray-800 text-center mb-2">
+      <h2 className="text-3xl font-bold text-gray-800 text-center mb-3">
         Education
       </h2>
-      <p className="text-gray-400 text-center text-sm mb-10">
+      <p className="text-gray-400 text-center text-base mb-12">
         Academic background and qualifications
       </p>
 
       {/* Degrees */}
-      <div className="grid grid-cols-2 gap-5 max-w-4xl mx-auto mb-10">
+      <div className="grid grid-cols-2 gap-6 max-w-6xl mx-auto mb-12">
         {education.map((edu, index) => (
           <div
             key={index}
-            className={`bg-white border ${edu.color} rounded-xl p-5`}
+            className={`bg-white border ${edu.color} rounded-xl p-6`}
           >
-            <div className="flex justify-between items-start mb-2">
-              <span className="text-2xl">🎓</span>
-              <span className={`text-xs px-2 py-1 rounded-full ${edu.badge}`}>
+            <div className="flex justify-between items-start mb-3">
+              <span className="text-3xl">🎓</span>
+              <span className={`text-sm px-3 py-1 rounded-full ${edu.badge}`}>
                 {edu.status}
               </span>
             </div>
 
-            <h3 className="text-base font-semibold text-gray-800 mb-1">
+            <h3 className="text-lg font-semibold text-gray-800 mb-1">
               {edu.degree}
             </h3>
-            <p className="text-blue-600 text-xs font-medium">{edu.university}</p>
-            <p className="text-gray-400 text-xs mt-0.5">{edu.location} · {edu.period}</p>
+            <p className="text-blue-600 text-sm font-medium">{edu.university}</p>
+            <p className="text-gray-400 text-sm mt-1">{edu.location} · {edu.period}</p>
 
-            <ul className="mt-3 space-y-1.5">
+            <ul className="mt-4 space-y-2">
               {edu.highlights.map((item, i) => (
-                <li key={i} className="flex gap-2 text-xs text-gray-500 leading-relaxed">
+                <li key={i} className="flex gap-2 text-sm text-gray-500 leading-relaxed">
                   <span className="text-blue-400 shrink-0 mt-0.5">▸</span>
                   {item}
                 </li>
@@ -85,7 +85,7 @@ function Education() {
               <a href={edu.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-3 text-xs text-blue-500 hover:text-blue-700"
+              className="inline-block mt-4 text-sm text-blue-500 hover:text-blue-700"
             >
               Visit website →
             </a>
@@ -94,24 +94,25 @@ function Education() {
       </div>
 
       {/* Languages */}
-      <div className="max-w-4xl mx-auto">
-        <h3 className="text-base font-semibold text-gray-700 text-center mb-5">
+      <div className="max-w-6xl mx-auto">
+        <h3 className="text-xl font-semibold text-gray-700 text-center mb-6">
           Languages
         </h3>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-3 gap-5">
           {languages.map((lang, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-200 rounded-xl p-4 flex items-center gap-4"
+              className="bg-white border border-gray-200 rounded-xl p-5 flex items-center gap-5"
             >
-              <span className="text-2xl">
-                {lang.name === 'English' ? '🇬🇧' : lang.name === 'Finnish' ? '🇫🇮' : '🇱🇰'}
+              <span className="text-3xl">
+                
+                {lang.name === 'English' ? '🇺🇸' : lang.name === 'Finnish' ? '🇫🇮' : '🇱🇰'}
               </span>
               <div>
-                <p className="text-sm font-semibold text-gray-800">{lang.name}</p>
-                <p className="text-xs text-gray-400">{lang.label}</p>
+                <p className="text-base font-semibold text-gray-800">{lang.name}</p>
+                <p className="text-sm text-gray-400">{lang.label}</p>
               </div>
-              <span className={`ml-auto text-xs px-2 py-1 rounded-full font-medium ${lang.color}`}>
+              <span className={`ml-auto text-sm px-3 py-1 rounded-full font-medium ${lang.color}`}>
                 {lang.level}
               </span>
             </div>

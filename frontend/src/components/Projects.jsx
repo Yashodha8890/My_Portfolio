@@ -3,7 +3,7 @@ import { useState } from 'react'
 const industryProjects = [
   {
     name: 'AiScout',
-    category: 'Product',
+    category: 'Project',
     type: 'Mobile App',
     company: 'Calcey Technologies',
     period: 'May 2022 – Jul 2023',
@@ -16,7 +16,7 @@ const industryProjects = [
   },
   {
     name: 'DreamSave & DreamSave Insights',
-    category: 'Product',
+    category: 'Project',
     type: 'Mobile + Web App',
     company: 'Calcey Technologies',
     period: 'May 2022 – Jul 2023',
@@ -116,33 +116,33 @@ function IndustryCard({ project }) {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className={`bg-white border ${project.color} rounded-xl p-5`}>
+    <div className={`bg-white border ${project.color} rounded-xl p-6`}>
       <div className="flex justify-between items-start mb-1">
-        <h3 className="text-base font-semibold text-gray-800">{project.name}</h3>
+        <h3 className="text-lg font-semibold text-gray-800">{project.name}</h3>
         <div className="flex flex-col items-end gap-1 shrink-0 ml-2">
-          <span className={`text-xs px-2 py-1 rounded-full ${project.badge}`}>
+          <span className={`text-sm px-3 py-1 rounded-full ${project.badge}`}>
             {project.category}
           </span>
-          <span className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-500">
+          <span className="text-sm px-3 py-1 rounded-full bg-gray-100 text-gray-500">
             {project.type}
           </span>
         </div>
       </div>
 
-      <p className="text-xs text-blue-600 font-medium">{project.company}</p>
-      <p className="text-xs text-gray-400 mt-0.5">{project.domain} · {project.period}</p>
-      <p className="text-xs text-gray-500 leading-relaxed mt-3">{project.description}</p>
+      <p className="text-sm text-blue-600 font-medium">{project.company}</p>
+      <p className="text-sm text-gray-400 mt-0.5">{project.domain} · {project.period}</p>
+      <p className="text-sm text-gray-500 leading-relaxed mt-3">{project.description}</p>
 
       {isOpen && (
         <div className="mt-3 pt-3 border-t border-gray-100">
-          <p className="text-xs font-medium text-gray-700 mb-1">My Role:</p>
-          <p className="text-xs text-gray-500 leading-relaxed">{project.myRole}</p>
+          <p className="text-sm font-medium text-gray-700 mb-1">My Role:</p>
+          <p className="text-sm text-gray-500 leading-relaxed">{project.myRole}</p>
         </div>
       )}
 
-      <div className="flex flex-wrap gap-1 mt-3">
+      <div className="flex flex-wrap gap-2 mt-3">
         {project.tags.map((tag) => (
-          <span key={tag} className="text-xs px-2 py-0.5 bg-gray-100 text-gray-500 rounded-full">
+          <span key={tag} className="text-sm px-3 py-1 bg-gray-100 text-gray-500 rounded-full">
             {tag}
           </span>
         ))}
@@ -150,7 +150,7 @@ function IndustryCard({ project }) {
 
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="mt-3 text-xs text-blue-500 hover:text-blue-700 font-medium"
+        className="mt-3 text-sm text-blue-500 hover:text-blue-700 font-medium"
       >
         {isOpen ? '▲ Hide my role' : '▼ Show my role'}
       </button>
@@ -162,23 +162,23 @@ function AcademicCard({ project }) {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className={`bg-white border ${project.color} rounded-xl p-5`}>
+    <div className={`bg-white border ${project.color} rounded-xl p-6`}>
       <div className="flex justify-between items-start mb-1">
-        <h3 className="text-base font-semibold text-gray-800">{project.name}</h3>
-        <span className={`text-xs px-2 py-1 rounded-full shrink-0 ml-2 ${project.badge}`}>
+        <h3 className="text-lg font-semibold text-gray-800">{project.name}</h3>
+        <span className={`text-sm px-3 py-1 rounded-full shrink-0 ml-2 ${project.badge}`}>
           {project.type}
         </span>
       </div>
 
-      <p className="text-xs text-gray-400 mt-0.5">{project.domain} · {project.period}</p>
-      <p className="text-xs text-gray-500 leading-relaxed mt-3">{project.description}</p>
+      <p className="text-sm text-gray-400 mt-0.5">{project.domain} · {project.period}</p>
+      <p className="text-sm text-gray-500 leading-relaxed mt-3">{project.description}</p>
 
       {isOpen && (
         <div className="mt-3 pt-3 border-t border-gray-100">
-          <p className="text-xs font-medium text-gray-700 mb-2">Key Features:</p>
-          <ul className="space-y-1.5">
+          <p className="text-sm font-medium text-gray-700 mb-2">Key Features:</p>
+          <ul className="space-y-2">
             {project.highlights.map((item, i) => (
-              <li key={i} className="flex gap-2 text-xs text-gray-500 leading-relaxed">
+              <li key={i} className="flex gap-2 text-sm text-gray-500 leading-relaxed">
                 <span className="text-blue-400 shrink-0 mt-0.5">▸</span>
                 {item}
               </li>
@@ -187,9 +187,9 @@ function AcademicCard({ project }) {
         </div>
       )}
 
-      <div className="flex flex-wrap gap-1 mt-3">
+      <div className="flex flex-wrap gap-2 mt-3">
         {project.techStack.map((tech) => (
-          <span key={tech} className="text-xs px-2 py-0.5 bg-gray-100 text-gray-500 rounded-full">
+          <span key={tech} className="text-sm px-3 py-1 bg-gray-100 text-gray-500 rounded-full">
             {tech}
           </span>
         ))}
@@ -198,7 +198,7 @@ function AcademicCard({ project }) {
       <div className="flex items-center justify-between mt-3">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="text-xs text-blue-500 hover:text-blue-700 font-medium"
+          className="text-sm text-blue-500 hover:text-blue-700 font-medium"
         >
           {isOpen ? '▲ Hide features' : '▼ Show features'}
         </button>
@@ -206,7 +206,7 @@ function AcademicCard({ project }) {
           <a href={project.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs px-3 py-1 bg-gray-800 text-white rounded-full hover:bg-gray-700"
+          className="text-sm px-4 py-2 bg-gray-800 text-white rounded-full hover:bg-gray-700"
         >
           GitHub →
         </a>
@@ -219,19 +219,19 @@ function Projects() {
   const [activeTab, setActiveTab] = useState('industry')
 
   return (
-    <section id="projects" className="px-10 py-16 bg-white border-b border-gray-200">
+    <section id="projects" className="px-16 py-20 bg-white border-b border-gray-200">
 
-      <h2 className="text-2xl font-bold text-gray-800 text-center mb-2">
+      <h2 className="text-3xl font-bold text-gray-800 text-center mb-3">
         Projects & Products
       </h2>
-      <p className="text-gray-400 text-center text-sm mb-8">
+      <p className="text-gray-400 text-center text-base mb-8">
         Industry QA experience and academic development projects
       </p>
 
-      <div className="flex gap-3 justify-center mb-10">
+      <div className="flex gap-4 justify-center mb-12">
         <button
           onClick={() => setActiveTab('industry')}
-          className={`text-sm px-6 py-2.5 rounded-full border transition-all ${
+          className={`text-base px-8 py-3 rounded-full border transition-all ${
             activeTab === 'industry'
               ? 'bg-blue-600 text-white border-blue-600'
               : 'bg-white text-gray-500 border-gray-200 hover:border-blue-300'
@@ -241,7 +241,7 @@ function Projects() {
         </button>
         <button
           onClick={() => setActiveTab('academic')}
-          className={`text-sm px-6 py-2.5 rounded-full border transition-all ${
+          className={`text-base px-8 py-3 rounded-full border transition-all ${
             activeTab === 'academic'
               ? 'bg-blue-600 text-white border-blue-600'
               : 'bg-white text-gray-500 border-gray-200 hover:border-blue-300'
@@ -252,7 +252,7 @@ function Projects() {
       </div>
 
       {activeTab === 'industry' && (
-        <div className="grid grid-cols-2 gap-5 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 gap-6 max-w-6xl mx-auto">
           {industryProjects.map((project, index) => (
             <IndustryCard key={index} project={project} />
           ))}
@@ -260,7 +260,7 @@ function Projects() {
       )}
 
       {activeTab === 'academic' && (
-        <div className="grid grid-cols-2 gap-5 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 gap-6 max-w-6xl mx-auto">
           {academicProjects.map((project, index) => (
             <AcademicCard key={index} project={project} />
           ))}

@@ -36,33 +36,33 @@ const categoryColors = {
 
 function Skills() {
   return (
-    <section id="skills" className="px-10 py-16 bg-gray-50 border-b border-gray-200">
+    <section id="skills" className="px-16 py-20 bg-white border-b border-gray-200">
 
-      <h2 className="text-2xl font-bold text-gray-800 text-center mb-2">
+      <h2 className="text-3xl font-bold text-gray-800 text-center mb-3">
         Skills & Tools
       </h2>
-      <p className="text-gray-400 text-center text-sm mb-10">
+      <p className="text-gray-400 text-center text-base mb-12">
         Technologies and methodologies I work with
       </p>
 
-      <div className="flex flex-wrap gap-3 justify-center max-w-4xl mx-auto">
+      <div className="flex flex-wrap gap-3 justify-center max-w-6xl mx-auto">
         {skills.map((skill) => (
           <span
             key={skill.name}
-            className={`text-sm px-4 py-2 rounded-full font-medium ${categoryColors[skill.category]}`}
+            className={`text-base px-5 py-2 rounded-full font-medium ${categoryColors[skill.category]}`}
           >
             {skill.name}
           </span>
         ))}
       </div>
 
-      <div className="flex gap-6 justify-center mt-10 flex-wrap">
-        <span className="text-xs text-green-700">🟢 Core QA</span>
-        <span className="text-xs text-blue-600">🔵 Automation</span>
-        <span className="text-xs text-purple-600">🟣 API</span>
-        <span className="text-xs text-amber-700">🟡 Languages</span>
-        <span className="text-xs text-pink-600">🩷 Methodology</span>
-        <span className="text-xs text-gray-500">⚪ Tools</span>
+      <div className="flex gap-8 justify-center mt-12 flex-wrap">
+        <span className="text-sm text-green-700">🟢 Core QA</span>
+        <span className="text-sm text-blue-600">🔵 Automation</span>
+        <span className="text-sm text-purple-600">🟣 API</span>
+        <span className="text-sm text-amber-700">🟡 Languages</span>
+        <span className="text-sm text-pink-600">🩷 Methodology</span>
+        <span className="text-sm text-gray-500">⚪ Tools</span>
       </div>
 
     </section>

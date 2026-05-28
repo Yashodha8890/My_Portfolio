@@ -150,69 +150,64 @@ function CompanyCard({ company }) {
   }
 
   return (
-    <div className="bg-white border border-gray-200 rounded-xl p-5">
+    <div className="bg-white border border-gray-200 rounded-xl p-6">
 
-      {/* Company Header */}
       <div className="flex justify-between items-start mb-1">
         <div>
-          <h3 className="text-base font-semibold text-gray-800">
+          <h3 className="text-lg font-semibold text-gray-800">
             {company.company}
           </h3>
-          <p className="text-xs text-gray-400 mt-0.5">
+          <p className="text-sm text-gray-400 mt-0.5">
             {company.location} · {company.period}
           </p>
         </div>
         <div className="flex flex-col items-end gap-1 shrink-0 ml-2">
-          <span className={`text-xs px-2 py-1 rounded-full ${
+          <span className={`text-sm px-3 py-1 rounded-full ${
             company.type === 'Product'
               ? 'bg-blue-50 text-blue-600'
               : 'bg-purple-50 text-purple-600'
           }`}>
             {company.type}
           </span>
-          <span className="text-xs text-gray-400 font-medium">
+          <span className="text-sm text-gray-400 font-medium">
             {company.totalDuration}
           </span>
         </div>
       </div>
 
-      <div className="border-t border-gray-100 mt-3 pt-3 flex flex-col gap-0">
+      <div className="border-t border-gray-100 mt-4 pt-4 flex flex-col gap-0">
         {company.roles.map((role, index) => (
           <div key={index} className="flex gap-4">
 
-            {/* Timeline */}
             <div className="flex flex-col items-center">
-              <div className="w-2 h-2 rounded-full bg-blue-500 mt-1 shrink-0"></div>
+              <div className="w-2.5 h-2.5 rounded-full bg-blue-500 mt-1 shrink-0"></div>
               {index !== company.roles.length - 1 && (
                 <div className="w-px flex-1 bg-gray-200 my-1"></div>
               )}
             </div>
 
-            {/* Role content */}
-            <div className="pb-4 flex-1">
-              <p className="text-sm font-medium text-gray-700">{role.role}</p>
-              <p className="text-gray-400 text-xs">{role.location} · {role.period}</p>
+            <div className="pb-5 flex-1">
+              <p className="text-base font-medium text-gray-700">{role.role}</p>
+              <p className="text-gray-400 text-sm">{role.location} · {role.period}</p>
 
-              {/* Testing type pills */}
               <div className="flex flex-wrap gap-1 mt-2">
                 {role.testingTypes.slice(0, 3).map((type) => (
-                  <span key={type} className="text-xs px-2 py-0.5 bg-gray-100 text-gray-500 rounded-full">
+                  <span key={type} className="text-sm px-2 py-0.5 bg-gray-100 text-gray-500 rounded-full">
                     {type}
                   </span>
                 ))}
                 {role.testingTypes.length > 3 && (
-                  <span className="text-xs px-2 py-0.5 bg-gray-100 text-gray-400 rounded-full">
+                  <span className="text-sm px-2 py-0.5 bg-gray-100 text-gray-400 rounded-full">
                     +{role.testingTypes.length - 3} more
                   </span>
                 )}
               </div>
 
-              {/* Expanded content */}
               {openRoles.includes(index) && (
                 <div className="mt-3">
-                  <ul className="space-y-1.5">
+                  <ul className="space-y-2">
                     {role.responsibilities.map((item, i) => (
-                      <li key={i} className="flex gap-2 text-xs text-gray-500 leading-relaxed">
+                      <li key={i} className="flex gap-2 text-sm text-gray-500 leading-relaxed">
                         <span className="text-blue-400 shrink-0 mt-0.5">▸</span>
                         {item}
                       </li>
@@ -220,7 +215,7 @@ function CompanyCard({ company }) {
                   </ul>
                   <div className="flex flex-wrap gap-1 mt-3 pt-3 border-t border-gray-100">
                     {role.testingTypes.map((type) => (
-                      <span key={type} className="text-xs px-2 py-0.5 bg-gray-100 text-gray-500 rounded-full">
+                      <span key={type} className="text-sm px-2 py-0.5 bg-gray-100 text-gray-500 rounded-full">
                         {type}
                       </span>
                     ))}
@@ -228,10 +223,9 @@ function CompanyCard({ company }) {
                 </div>
               )}
 
-              {/* Toggle button */}
               <button
                 onClick={() => toggleRole(index)}
-                className="mt-2 text-xs text-blue-500 hover:text-blue-700 font-medium"
+                className="mt-2 text-sm text-blue-500 hover:text-blue-700 font-medium"
               >
                 {openRoles.includes(index) ? '▲ Show less' : '▼ Show more'}
               </button>
@@ -245,16 +239,16 @@ function CompanyCard({ company }) {
 
 function Experience() {
   return (
-    <section id="experience" className="px-10 py-16 bg-gray-50 border-b border-gray-200">
+    <section id="experience" className="px-16 py-20 bg-gray-50 border-b border-gray-200">
 
-      <h2 className="text-2xl font-bold text-gray-800 text-center mb-2">
+      <h2 className="text-3xl font-bold text-gray-800 text-center mb-3">
         Work Experience
       </h2>
-      <p className="text-gray-400 text-center text-sm mb-10">
+      <p className="text-gray-400 text-center text-base mb-12">
         8 years of professional QA journey across 3 companies
       </p>
 
-      <div className="grid grid-cols-2 gap-5 max-w-5xl mx-auto">
+      <div className="grid grid-cols-2 gap-6 max-w-6xl mx-auto">
         {companies.map((company, index) => (
           <CompanyCard key={index} company={company} />
         ))}
