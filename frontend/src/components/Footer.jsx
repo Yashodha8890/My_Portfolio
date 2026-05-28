@@ -44,11 +44,11 @@ function Footer() {
         </div>
 
         {/* Bottom bar — same navy */}
-        <div className="w-full pt-6" style={{borderTop: '1px solid #2d5a8e'}}>
-          <p className="text-sm text-gray-400 text-center">
-            © 2025 Your Full Name · Built with React & Node.js · Tampere, Finland
-          </p>
-        </div>
+        <div className="w-full py-4 -mx-0 -mb-10" style={{backgroundColor: '#16274bff', borderTop: '1px solid #2d5a8e'}}>
+  <p className="text-sm text-white text-center">
+    © 2025 Your Full Name · Built with React & Node.js · Tampere, Finland
+  </p>
+</div>
 
       </div>
     </footer>
