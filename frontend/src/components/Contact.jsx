@@ -144,7 +144,7 @@ function Contact() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                placeholder="John Smith"
+                placeholder="Enter your name"
                 className="w-full text-base px-4 py-3 border border-gray-200 rounded-lg bg-white focus:outline-none focus:border-blue-400"
               />
             </div>
@@ -170,7 +170,7 @@ function Contact() {
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                placeholder="Job Opportunity"
+                placeholder="Add the subject"
                 className="w-full text-base px-4 py-3 border border-gray-200 rounded-lg bg-white focus:outline-none focus:border-blue-400"
               />
             </div>

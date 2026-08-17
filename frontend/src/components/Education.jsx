@@ -5,8 +5,8 @@ const education = [
     degree: 'BBA in Computer Application',
     university: 'HAMK Häme University of Applied Sciences',
     location: 'Hämeenlinna, Finland',
-    period: 'Aug 2023 – Present',
-    status: 'In Progress',
+    period: 'Aug 2023 – July 2026',
+    status: 'Completed',
     website: 'https://www.hamk.fi/',
     highlights: [
       'Full stack web development with React, Node.js, Express and MongoDB',
