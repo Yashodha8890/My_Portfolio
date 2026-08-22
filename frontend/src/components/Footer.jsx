@@ -19,7 +19,7 @@ function Footer() {
 
         <div className="flex gap-4">
           
-          <a href="https://linkedin.com/in/yourprofile"
+          <a href="https://www.linkedin.com/in/yashodha-amarasinghe"
             target="_blank"
             rel="noopener noreferrer"
             className="text-base px-5 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-400"
@@ -27,7 +27,7 @@ function Footer() {
             LinkedIn
           </a>
           
-           <a href="https://github.com/yourusername"
+           <a href="https://github.com/Yashodha8890"
             target="_blank"
             rel="noopener noreferrer"
             className="text-base px-5 py-2 bg-white text-blue-900 rounded-full hover:bg-gray-100"
