@@ -65,7 +65,7 @@ function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">Email</p>
-                  <p className="text-base text-blue-600 font-medium">your.email@gmail.com</p>
+                  <p className="text-base text-blue-600 font-medium">yashodha8890@gmail.com</p>
                 </div>
               </div>
 
@@ -76,7 +76,7 @@ function Contact() {
                 <div>
                   <p className="text-sm text-gray-400">LinkedIn</p>
                   
-                    <a href="https://linkedin.com/in/yourprofile"
+                    <a href="https://www.linkedin.com/in/yashodha-amarasinghe"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-base text-blue-600 font-medium hover:text-blue-700"
@@ -93,7 +93,7 @@ function Contact() {
                 <div>
                   <p className="text-sm text-gray-400">GitHub</p>
                   
-                   <a href="https://github.com/yourusername"
+                   <a href="https://github.com/Yashodha8890"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-base text-blue-600 font-medium hover:text-blue-700"
