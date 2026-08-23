@@ -157,7 +157,7 @@ function Contact() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                placeholder="john@example.com"
+                placeholder="Enter your Email "
                 className="w-full text-base px-4 py-3 border border-gray-200 rounded-lg bg-white focus:outline-none focus:border-blue-400"
               />
             </div>
@@ -183,7 +183,7 @@ function Contact() {
                 onChange={handleChange}
                 required
                 rows={4}
-                placeholder="Your message here..."
+                placeholder="Add your message here..."
                 className="w-full text-base px-4 py-3 border border-gray-200 rounded-lg bg-white focus:outline-none focus:border-blue-400 resize-none"
               />
             </div>
