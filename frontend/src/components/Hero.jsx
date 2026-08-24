@@ -26,14 +26,17 @@ function Hero() {
           </p>
 
           <p className="text-gray-500 text-base leading-relaxed max-w-xl mb-6">
-            Software quality assurance professional with 8 years of experience
-across diverse industries and domains. Skilled in manual testing,
-test automation, API testing and mobile testing. Strong team player
-with proven leadership and a holder of two Bachelor's degrees —
-BSc (Hons) in Information Technology from SLIIT, Sri Lanka (2015) and
-BBA in Computer Application from HAMK University of Applied Sciences,
-Finland (2026).
-          </p>
+  Software quality assurance professional with 8 years of experience
+  across diverse industries and domains. Skilled in manual testing,
+  test automation, API testing and mobile testing. Holder of two
+  Bachelor's degrees — BSc (Hons) in Information Technology from SLIIT,
+  Sri Lanka and BBA in Computer Application from HAMK University of
+  Applied Sciences, Finland (2026). During my studies at HAMK, gained hands-on experience in React, 
+React Native, Node.js, Express and MongoDB through real world projects, 
+and strengthened test automation skills with Robot Framework and Python. Open to both
+  QA Engineer and Junior Software Engineer opportunities in Finland.
+        </p>
+  
 
           <div className="flex gap-3 flex-wrap mb-8">
             <span className="text-sm px-4 py-1.5 rounded-full bg-blue-50 text-blue-600">

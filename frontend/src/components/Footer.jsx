@@ -4,7 +4,7 @@ function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col items-center gap-6">
 
         <div className="text-center">
-          <p className="text-lg font-bold text-white">Your Full Name</p>
+          <p className="text-lg font-bold text-white">Yashodha Amarasinghe</p>
           <p className="text-base text-gray-300 mt-1">Senior Software QA Engineer · Tampere, Finland</p>
         </div>
 
@@ -46,7 +46,7 @@ function Footer() {
         {/* Bottom bar — same navy */}
         <div className="w-full py-4 -mx-0 -mb-10" style={{backgroundColor: '#16274bff', borderTop: '1px solid #16274bff'}}>
   <p className="text-sm text-white text-center">
-    © 2025 Your Full Name · Built with React & Node.js · Tampere, Finland
+    © 2025 Yashodha Amarasinghe · Built with React & Node.js · Tampere, Finland
   </p>
 </div>
 

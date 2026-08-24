@@ -10,6 +10,7 @@ const skills = [
   { name: 'Appium', category: 'automation' },
   { name: 'WebdriverIO', category: 'automation' },
   { name: 'Robot Framework', category: 'automation' },
+  { name: 'Python (Robot Framework)', category: 'automation' },
   { name: 'Postman', category: 'api' },
   { name: 'JIRA', category: 'tools' },
   { name: 'Confluence', category: 'tools' },
@@ -17,14 +18,18 @@ const skills = [
   { name: 'Git', category: 'tools' },
   { name: 'Kibana', category: 'tools' },
   { name: 'Metabase', category: 'tools' },
+  { name: 'Kafka', category: 'tools' },
   { name: 'Java', category: 'language' },
   { name: 'JavaScript', category: 'language' },
   { name: 'Python', category: 'language' },
   { name: 'SQL', category: 'language' },
   { name: 'Agile / Scrum', category: 'methodology' },
-  { name: 'Kafka', category: 'tools' },
-  { name: 'Node.js', category: 'language' },
-  { name: 'React.js / React Native', category: 'language' }
+  { name: 'Node.js', category: 'development' },
+  { name: 'React.js / React Native', category: 'development' },
+  { name: 'Express.js', category: 'development' },
+  { name: 'MongoDB', category: 'development' },
+  { name: 'HTML / CSS', category: 'development' },
+  { name: 'SQLite', category: 'development' },
 ]
 
 const categoryColors = {
@@ -34,6 +39,7 @@ const categoryColors = {
   tools: 'bg-gray-100 text-gray-600 border border-gray-200',
   language: 'bg-amber-50 text-amber-700 border border-amber-200',
   methodology: 'bg-pink-50 text-pink-600 border border-pink-200',
+  development: 'bg-indigo-50 text-indigo-600 border border-indigo-200',
 }
 
 function Skills() {
@@ -65,6 +71,7 @@ function Skills() {
         <span className="text-sm text-amber-700">🟡 Languages</span>
         <span className="text-sm text-pink-600">🩷 Methodology</span>
         <span className="text-sm text-gray-500">⚪ Tools</span>
+        <span className="text-sm text-indigo-600">🔷 Development</span>
       </div>
 
     </section>
