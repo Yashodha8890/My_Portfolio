@@ -1,13 +1,15 @@
-# Personal Portfolio — Your Full Name
+# Personal Portfolio — Yashodha Amarasinghe
 
 A full-stack personal portfolio website built with React, Node.js and Express.js.
-Live at: [your-portfolio-link] (coming soon)
 
-## About
-Senior Software QA Engineer with 8 years of experience seeking opportunities in Finland.
-Built this portfolio to showcase my professional experience, projects and academic work at HAMK.
+🌐 Live at: [yashodhaqa.dev](https://my-portfolio-six-woad-16.vercel.app)
 
-## Tech Stack
+## 👤 About
+
+Senior Software QA Engineer with 8 years of experience and a BBA in Computer Application from HAMK University of Applied Sciences, Finland (2026). Seeking QA Engineer and Junior Software Engineer opportunities in Finland.
+
+## 🛠️ Tech Stack
+
 ### Frontend
 - React 18 + Vite
 - Tailwind CSS
@@ -16,38 +18,45 @@ Built this portfolio to showcase my professional experience, projects and academ
 ### Backend
 - Node.js
 - Express.js
-- Nodemailer (contact form)
+- Resend (contact form email)
 
-## Features
-- Responsive portfolio with 8 sections
-- Interactive experience timeline with expandable details
-- Projects filtered by Industry QA and Academic work
-- Working contact form with email notifications
-- Certifications and Education sections
-
-## Sections
-- Hero — Introduction and summary
-- Skills — Technical skills and tools
-- Experience — 8 years across 3 companies
-- Projects — Industry QA + Academic projects with GitHub links
-- Certifications — ISTQB and Scrum certifications
+## 📂 Features
+- Hero section with photo and bio
+- Skills section with categorized tools
+- Work experience timeline — 8 years across 3 companies
+- Projects section — Industry QA + Academic projects with GitHub links
+- Certifications — ISTQB and Scrum
 - Education — HAMK Finland + SLIIT Sri Lanka
-- Contact — Working contact form
+- Languages section
+- Working contact form with email notifications
+- Responsive design
 
-## Run Locally
+## 🚀 Run Locally
 
 ### Frontend
+```bash
 cd frontend
 npm install
 npm run dev
+```
 
 ### Backend
+```bash
 cd backend
 npm install
 node server.js
+```
 
-## Contact
-- Email: your.email@gmail.com
-- LinkedIn: linkedin.com/in/yourprofile
-- GitHub: github.com/yourusername
+### Environment Variables
+Create `backend/.env`:
+
+
+## 📦 Deployment
+- Frontend → Vercel
+- Backend → Render
+
+## 📬 Contact
+- Email: yashodha8890@gmail.com
+- LinkedIn: www.linkedin.com/in/yashodha-amarasinghe
+- GitHub: https://github.com/Yashodha8890
 - Location: Tampere, Finland

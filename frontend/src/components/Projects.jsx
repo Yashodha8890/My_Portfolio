@@ -3,7 +3,7 @@ import { useState } from 'react'
 const industryProjects = [
   {
     name: 'AiScout',
-    category: 'Project',
+    category: 'Product',
     type: 'Mobile App',
     company: 'Calcey Technologies',
     period: 'May 2022 – Jul 2023',
@@ -16,7 +16,7 @@ const industryProjects = [
   },
   {
     name: 'DreamSave & DreamSave Insights',
-    category: 'Project',
+    category: 'Product',
     type: 'Mobile + Web App',
     company: 'Calcey Technologies',
     period: 'May 2022 – Jul 2023',
@@ -57,20 +57,43 @@ const industryProjects = [
 
 const academicProjects = [
   {
+    name: "Theo's Factory",
+    type: 'Full Stack Web App · Thesis Project',
+    period: '2024 – 2025',
+    domain: 'Event Services',
+    description: "A full-stack event services web application developed as my Bachelor's thesis at HAMK. Features three separate user flows — public guest browsing, logged-in customer workflows, and a fully separated admin dashboard. Built with React, Node.js, Express and MongoDB with JWT authentication.",
+    techStack: ['React', 'Vite', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'JWT', 'bcrypt', 'Axios'],
+    highlights: [
+      'Developed as Bachelor thesis project at HAMK University of Applied Sciences',
+      'Public pages — Home, Services, Gallery, Book Appointment, Request Quotation',
+      'Customer dashboard — appointments, rentals, quotations, profile management',
+      'Admin dashboard — bookings, inventory, orders and gallery management',
+      'JWT authentication with role-based access control (customer vs admin)',
+      'Day/Night mode persisted across sessions',
+    ],
+    github: 'https://github.com/Yashodha8890/Theos-Factory-Web-App',
+    thesis: 'https://urn.fi/URN:NBN:fi:amk-2026052818839',
+    collaborative: false,
+    badge: 'bg-amber-50 text-amber-700',
+    color: 'border-amber-100',
+  },
+  {
     name: 'Daily Routine Tracker — Web App',
     type: 'Full Stack Web App',
     period: '2024',
     domain: 'Productivity',
-    description: 'A full-stack web application helping users organize and monitor daily life through structured tracking of activities and expenses. Features activity planning with CRUD, expense logging, dashboard summaries and user authentication.',
-    techStack: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'Handlebars.js', 'HTML', 'CSS', 'JavaScript', 'Passport.js', 'Postman'],
+    description: 'A full-stack web application helping users organize and monitor daily life through structured tracking of activities and expenses. Features activity planning with CRUD, expense logging, dashboard summaries and secure user authentication.',
+    techStack: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'Handlebars.js', 'HTML', 'CSS', 'JavaScript', 'Passport.js'],
     highlights: [
       'Activity tracker with CRUD — to-do tasks, meals, workouts, meetings',
       'Expense tracker with income/expense logs and financial summaries',
       'Secure user authentication with Passport.js',
       'Deployed on Azure cloud service',
-      'API tested with Postman following accessibility guidelines',
+      'Accessibility guidelines followed throughout development',
     ],
-    github: 'https://github.com/yourusername/daily-routine-tracker-web',
+    github: 'https://github.com/Yashodha8890/Web-Framework-Project',
+    thesis: null,
+    collaborative: true,
     badge: 'bg-blue-50 text-blue-600',
     color: 'border-blue-100',
   },
@@ -89,26 +112,10 @@ const academicProjects = [
       'Light/Dark mode support with secure login/logout',
     ],
     github: 'https://github.com/shammi22000/DailyRoutineTrackerNew',
+    thesis: null,
+    collaborative: true,
     badge: 'bg-purple-50 text-purple-600',
     color: 'border-purple-100',
-  },
-  {
-    name: "Theo's Factory",
-    type: 'Full Stack Web App',
-    period: '2024 – 2025',
-    domain: 'Event Services',
-    description: 'A full-stack event services web application with three separate user flows — public guest browsing, logged-in customer workflows, and a fully separated admin dashboard. Built with React, Node.js, Express and MongoDB.',
-    techStack: ['React', 'Vite', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'JWT', 'bcrypt', 'Axios'],
-    highlights: [
-      'Public pages — Home, Services, Gallery, Book Appointment, Request Quotation',
-      'Customer dashboard — appointments, rentals, quotations, profile management',
-      'Admin dashboard — bookings, inventory, orders and gallery management',
-      'JWT authentication with role-based access control (customer vs admin)',
-      'Day/Night mode persisted across sessions',
-    ],
-    github: 'https://github.com/yourusername/theos-factory',
-    badge: 'bg-amber-50 text-amber-700',
-    color: 'border-amber-100',
   },
 ]
 
@@ -165,9 +172,16 @@ function AcademicCard({ project }) {
     <div className={`bg-white border ${project.color} rounded-xl p-6`}>
       <div className="flex justify-between items-start mb-1">
         <h3 className="text-lg font-semibold text-gray-800">{project.name}</h3>
-        <span className={`text-sm px-3 py-1 rounded-full shrink-0 ml-2 ${project.badge}`}>
-          {project.type}
-        </span>
+        <div className="flex flex-col items-end gap-1 shrink-0 ml-2">
+          <span className={`text-sm px-3 py-1 rounded-full ${project.badge}`}>
+            {project.type}
+          </span>
+          {project.collaborative && (
+            <span className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-500">
+              👥 Group Project
+            </span>
+          )}
+        </div>
       </div>
 
       <p className="text-sm text-gray-400 mt-0.5">{project.domain} · {project.period}</p>
@@ -195,21 +209,33 @@ function AcademicCard({ project }) {
         ))}
       </div>
 
-      <div className="flex items-center justify-between mt-3">
+      <div className="flex items-center justify-between mt-4">
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="text-sm text-blue-500 hover:text-blue-700 font-medium"
         >
           {isOpen ? '▲ Hide features' : '▼ Show features'}
         </button>
-        
-          <a href={project.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sm px-4 py-2 bg-gray-800 text-white rounded-full hover:bg-gray-700"
-        >
-          GitHub →
-        </a>
+        <div className="flex gap-2">
+          {project.thesis && (
+            
+              <a href={project.thesis}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm px-4 py-2 bg-amber-600 text-white rounded-full hover:bg-amber-700"
+            >
+              📄 Thesis →
+            </a>
+          )}
+          
+            <a href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm px-4 py-2 bg-gray-800 text-white rounded-full hover:bg-gray-700"
+          >
+            GitHub →
+          </a>
+        </div>
       </div>
     </div>
   )
