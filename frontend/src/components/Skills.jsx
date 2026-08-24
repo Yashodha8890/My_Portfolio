@@ -19,10 +19,12 @@ const skills = [
   { name: 'Metabase', category: 'tools' },
   { name: 'Java', category: 'language' },
   { name: 'JavaScript', category: 'language' },
-  { name: 'Python Basics', category: 'language' },
+  { name: 'Python', category: 'language' },
   { name: 'SQL', category: 'language' },
   { name: 'Agile / Scrum', category: 'methodology' },
   { name: 'Kafka', category: 'tools' },
+  { name: 'Node.js', category: 'language' },
+  { name: 'React.js / React Native', category: 'language' }
 ]
 
 const categoryColors = {

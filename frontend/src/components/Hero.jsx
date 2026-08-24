@@ -27,10 +27,12 @@ function Hero() {
 
           <p className="text-gray-500 text-base leading-relaxed max-w-xl mb-6">
             Software quality assurance professional with 8 years of experience
-            across diverse industries and domains. Skilled in manual testing,
-            test automation, API testing and mobile testing. Strong team player
-            with proven leadership, currently completing a BBA in Computer
-            Application at HAMK, Finland.
+across diverse industries and domains. Skilled in manual testing,
+test automation, API testing and mobile testing. Strong team player
+with proven leadership and a holder of two Bachelor's degrees —
+BSc (Hons) in Information Technology from SLIIT, Sri Lanka (2015) and
+BBA in Computer Application from HAMK University of Applied Sciences,
+Finland (2026).
           </p>
 
           <div className="flex gap-3 flex-wrap mb-8">
@@ -41,7 +43,7 @@ function Hero() {
               ✅ Open to Work
             </span>
             <span className="text-sm px-4 py-1.5 rounded-full bg-amber-50 text-amber-700">
-              🎓 BBA at HAMK · In Progress
+              🎓 BBA at HAMK · Completed
             </span>
           </div>
 
