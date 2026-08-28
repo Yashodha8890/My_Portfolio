@@ -117,6 +117,51 @@ const academicProjects = [
     badge: 'bg-purple-50 text-purple-600',
     color: 'border-purple-100',
   },
+
+  {
+    name: 'Personal Portfolio Website',
+    type: 'Full Stack Web App',
+    period: '2025',
+    domain: 'Personal Branding',
+    description: 'This portfolio website you are currently viewing, built with React, Vite, Tailwind CSS, Node.js and Express.js. Features a working contact form, dynamic components and deployed on Vercel and Render.',
+    techStack: ['React', 'Vite', 'Tailwind CSS', 'Node.js', 'Express.js', 'Resend', 'Vercel', 'Render'],
+    highlights: [
+      'Built entirely from scratch with React and Tailwind CSS',
+      'Express.js backend with working contact form using Resend',
+      'Dynamic components with useState for accordions and tab filtering',
+      'Deployed frontend on Vercel and backend on Render',
+      'Public GitHub repository with clean code structure',
+    ],
+    github: 'https://github.com/Yashodha8890/My_Portfolio',
+    thesis: null,
+    collaborative: false,
+    badge: 'bg-indigo-50 text-indigo-600',
+    color: 'border-indigo-100',
+  },
+
+  {
+    name: 'Asian Delight Restaurant',
+    type: 'Full Stack Web App',
+    period: '2023 – 2024',
+    domain: 'Restaurant / Hospitality',
+    description: 'A full-stack restaurant website for a conceptual Asian restaurant built as a group project at HAMK. Features dynamic menu management, online ordering, table reservations, event booking, delivery management and an admin panel — all backed by MySQL database.',
+    techStack: ['PHP', 'MySQL', 'HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+    highlights: [
+          '👤 My contribution: Admin panel, food category & menu item management (CRUD)',
+          '👤 My contribution: Order retrieval and management system from admin panel',
+          '👤 My contribution: Dynamic restaurant menu loaded from MySQL database',
+          '👤 My contribution: JavaScript form validations for food items and orders',
+    'Table reservation and event booking system (team members)',
+    'Member registration and login with different user levels (team members)',
+    'Customer feedback and rating system (team members)',
+    'Deployed on HAMK shell server',
+  ],
+    github: 'https://github.com/Yashodha8890/Web_Programming_Project',
+    thesis: null,
+    collaborative: true,
+    badge: 'bg-red-50 text-red-600',
+    color: 'border-red-100',
+  },
 ]
 
 function IndustryCard({ project }) {
