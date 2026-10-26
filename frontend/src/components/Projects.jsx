@@ -144,7 +144,7 @@ const academicProjects = [
     type: 'Full Stack Web App',
     period: '2023 – 2024',
     domain: 'Restaurant / Hospitality',
-    description: 'A full-stack restaurant website for a conceptual Asian restaurant built as a group project at HAMK. Features dynamic menu management, online ordering, table reservations, event booking, delivery management and an admin panel — all backed by MySQL database.',
+    description: 'A full-stack restaurant website for a conceptual Asian restaurant built as a 4-member group project at HAMK. I was responsible for the admin panel, dynamic menu management and order handling. Built with PHP, MySQL, HTML, CSS, JavaScript and Bootstrap.',
     techStack: ['PHP', 'MySQL', 'HTML', 'CSS', 'JavaScript', 'Bootstrap'],
     highlights: [
           '👤 My contribution: Admin panel, food category & menu item management (CRUD)',
@@ -159,7 +159,7 @@ const academicProjects = [
     github: 'https://github.com/Yashodha8890/Web_Programming_Project',
     thesis: null,
     collaborative: true,
-    badge: 'bg-red-50 text-red-600',
+    badge: 'bg-red-50 text-green-600',
     color: 'border-red-100',
   },
 ]
